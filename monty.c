@@ -86,10 +86,6 @@ fprintf(stderr, "Error: Can't open file %s\n", argv[1]);
 exit(EXIT_FAILURE);
 }
 
-on_exit(free_lineptr, &lineptr);
-on_exit(free_stack, &stack);
-on_exit(myfile_close, myfile);
-
 while (getline(&lineptr, &llen, myfile) != -1)
 {
 line++;
