@@ -13,6 +13,7 @@
 stack_t *add_node(stack_t **stack, const int n)
 {
 stack_t *new;
+
 if (stack == NULL)
 return (NULL);
 new = malloc(sizeof(stack_t));
@@ -31,7 +32,7 @@ new->prev = (*stack)->prev;
 (*stack)->prev = new;
 new->next = *stack;
 }
-if (var.queue == STACK || var.stack_len == 0)
+if (var.len_queue == STACK || var.len_stack == 0)
 *stack = new;
 return (new);
 }

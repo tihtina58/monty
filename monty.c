@@ -1,7 +1,6 @@
 #define  _POSIX_C_SOURCE 200809L
 #include "monty.h"
 #include <stdlib.h>
-
 /* global struct to hold flag for queue and stack length */
 var_t var;
 

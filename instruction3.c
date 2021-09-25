@@ -58,7 +58,7 @@ tmp = *stack;
 while (tmp != NULL)
 {
 ch = tmp->n;
-if ((ch < 0 || ch > 127) || ch == 0)
+ if ((ch < 0 || ch > 127) || ch == 0)
 break;
 putchar(ch);
 tmp = tmp->next;
